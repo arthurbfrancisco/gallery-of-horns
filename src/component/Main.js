@@ -6,8 +6,9 @@ class Main extends React.Component {
     return (
       <div>
         <HornedBeast
-          title="Firs Horned Beast"
+          title="First Horned Beast"
           imageUrl="http://3.bp.blogspot.com/_DBYF1AdFaHw/TE-f0cDQ24I/AAAAAAAACZg/l-FdTZ6M7z8/s1600/Unicorn_and_Narwhal_by_dinglehopper.jpg"
+          description="Description of the first horned beast."
         />
         <HornedBeast
           title="Second Horned Beast"
