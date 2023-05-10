@@ -12,25 +12,15 @@ This project is built using React and includes components for displaying a galle
 
 - Lab 01: 4 hours
 
--Lab 02_Number and name of feature: ________________________________
+-Lab 02_Number and name of feature: React State and Props
 
-Estimate of time needed to complete: _____
+Estimate of time needed to complete: 1-2 hr
 
-Start time: _____
+Start time: 6pm
 
-Finish time: _____
+Finish time: 9pm
 
-Actual time needed to complete: _____
-
-Lab 03_Number and name of feature: ________________________________
-
-Estimate of time needed to complete: _____
-
-Start time: _____
-
-Finish time: _____
-
-Actual time needed to complete: _____
+Actual time needed to complete: 1 hour
 
 Lab 03_Number and name of feature: ________________________________
 
@@ -42,7 +32,37 @@ Finish time: _____
 
 Actual time needed to complete: _____
 
-Lab04_Number and name of feature: ________________________________
+Lab 04_Number and name of feature: ________________________________
+
+Estimate of time needed to complete: _____
+
+Start time: _____
+
+Finish time: _____
+
+Actual time needed to complete: _____
+
+Lab05_Number and name of feature: ________________________________
+
+Estimate of time needed to complete: _____
+
+Start time: _____
+
+Finish time: _____
+
+Actual time needed to complete: _____
+
+Lab06_Number and name of feature: ________________________________
+
+Estimate of time needed to complete: _____
+
+Start time: _____
+
+Finish time: _____
+
+Actual time needed to complete: _____
+
+Lab07_Number and name of feature: ________________________________
 
 Estimate of time needed to complete: _____
 
