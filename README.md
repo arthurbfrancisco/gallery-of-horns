@@ -11,9 +11,46 @@ This project is built using React and includes components for displaying a galle
 ## Time Estimates for Labs
 
 - Lab 01: 4 hours
-- Lab 02: 
-- Lab 03: 
-- Lab 04: 
+
+-Lab 02_Number and name of feature: ________________________________
+
+Estimate of time needed to complete: _____
+
+Start time: _____
+
+Finish time: _____
+
+Actual time needed to complete: _____
+
+Lab 03_Number and name of feature: ________________________________
+
+Estimate of time needed to complete: _____
+
+Start time: _____
+
+Finish time: _____
+
+Actual time needed to complete: _____
+
+Lab 03_Number and name of feature: ________________________________
+
+Estimate of time needed to complete: _____
+
+Start time: _____
+
+Finish time: _____
+
+Actual time needed to complete: _____
+
+Lab04_Number and name of feature: ________________________________
+
+Estimate of time needed to complete: _____
+
+Start time: _____
+
+Finish time: _____
+
+Actual time needed to complete: _____
 ## Learn More
 
 ## Contributing

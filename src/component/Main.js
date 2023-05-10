@@ -1,23 +1,27 @@
 import React from 'react';
-import HornedBeast from '.component/Hornedbeast';
+import HornedBeast from './Hornedbeast';
+import data from'../data.json';
+import Col from 'react-bootstrap/Col';
+
 
 class Main extends React.Component {
   render() {
+    console.log(data);
     return (
-      <div>
-        <HornedBeast
-          title="First Horned Beast"
-          imageUrl="http://3.bp.blogspot.com/_DBYF1AdFaHw/TE-f0cDQ24I/AAAAAAAACZg/l-FdTZ6M7z8/s1600/Unicorn_and_Narwhal_by_dinglehopper.jpg"
-          description="Description of the first horned beast."
-        />
-        <HornedBeast
-          title="Second Horned Beast"
-          imageUrl="https://metro.co.uk/wp-content/uploads/2018/09/sei_31784882-985e.jpg?quality=90&strip=all&zoom=1&resize=480%2C318"
-          description="Description of the second horned beast."
-        />
-      </div>
+ 
+        <Col>
+        {data.map((beast, index) => (
+          <HornedBeast
+            key={index}
+            title={beast.title}
+            imageUrl={beast.image_url}
+            description={beast.description}
+          />
+        ))}
+     </Col>
     );
   }
 }
+
 
 export default Main;
