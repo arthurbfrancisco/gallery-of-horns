@@ -2,7 +2,7 @@ import React from 'react';
 import HornedBeast from './Hornedbeast';
 // import Col from 'react-bootstrap/Col';
 // import HornedOneData from './data.json';
-import Col from 'react-bootstrap/Col';
+import Col from 're q1qact-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 
 

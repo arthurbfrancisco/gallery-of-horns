@@ -1,10 +1,11 @@
 import React from "react";
-import Header from './component/Header.js';
+import Header from './Header.js';
 import Main from "./Main.js";
-import Footer from "./component/Footer.js";
+import Footer from "./Footer.js";
 import './App.css';
-import data from './Assets/data.json';
-import SelectedBeast from './component/Selectedbeast.js'
+import data from './data.json';
+import SelectedBeast from './Selectedbeast.js'
+
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -24,12 +25,14 @@ class App extends React.Component {
   }
 
   handleShowModal = (selectedBeast) => {
+    // SetState  will only  work inside the component.
+    // if in App we call setState
 this.setState({
   isModalDisplaying: true,
   beastName: 'test',
   clickedBeast: {}
 });
-console.log('miodal was clicked');
+console.log('modal was clicked');
 
 } 
 
@@ -44,7 +47,7 @@ render() {
     return (
       <>
         <Header
-        heasrt={this.state.hearts}
+        hearts={this.state.hearts}
         />
         <Main 
           addHearts={this.addHearts}
@@ -60,7 +63,7 @@ render() {
         <SelectedBeast
         show={this.state.isModalDisplaying}
         onHide={this.handleCloseModal}
-        clickedBeast={this.state.clickedBeast}
+        selectedBeast={this.state.selectedBeast}
         />
       </>
     )
