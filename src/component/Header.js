@@ -1,9 +1,14 @@
-import React from 'react';
+import React from "react";
 
 class Header extends React.Component {
+  
   render() {
-    return <h1>Horned Animals Gallery</h1>;
+  return (
+    <header className="header">
+      <h1>The Horned One</h1>
+    </header>
+  )
   }
-}
+};
 
 export default Header;

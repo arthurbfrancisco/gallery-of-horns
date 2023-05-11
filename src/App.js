@@ -1,30 +1,36 @@
-import React from 'react';
-import Main from './component/Main';
-import Header from './component/Header';
-import Footer from './component/Footer';
-import SelectedBeast from './component/SelectedBeast';
-import Modal from 'react-bootstrap/Modal'
+import React from "react";
+import Header from './component/Header.js';
+import Main from "./Main.js";
+import Footer from "./component/Footer.js";
+import './App.css';
 import data from './Assets/data.json';
+import SelectedBeast from './component/Selectedbeast.js'
 class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       hearts: '',
       selectedBeast: {},
-      isModalDisplaying: true
+      isModalDisplaying: false,
+      beastName: 'test',
+      clickedBeast: {}
     };
   }
   
   addHearts = () => {
     this.setState({
-      hearts: this.state.hearts + '💙'
+      hearts: this.state.hearts + <span role="img" aria-label="blackHeart">'🖤'</span>
     });
   }
 
-  handleShowModal = () => {
+  handleShowModal = (selectedBeast) => {
 this.setState({
-  isModalDisplaying: true
+  isModalDisplaying: true,
+  beastName: 'test',
+  clickedBeast: {}
 });
+console.log('miodal was clicked');
+
 } 
 
 handleCloseModal = () => {
@@ -33,37 +39,33 @@ handleCloseModal = () => {
   });
 }
   
-  updateSelectedBeast = (beast) => {
-    this.setState({ selectedBeast: beast 
-    ,SelectedBeast: beast,
-    showModal: true,
-    });
-  }
 
-  render() {
+render() {
     return (
-      <div>
-        <Header />
+      <>
+        <Header
+        heasrt={this.state.hearts}
+        />
         <Main 
+          addHearts={this.addHearts}
           data={data} 
-          updateSelectedBeast={this.updateSelectedBeast}
+          handleShowModal={this.handleShowModal}
         />
         <SelectedBeast 
           show={this.state.showModal} 
           handleClose={this.handleClose}
           beast={this.state.selectedBeast}
         />
-        <Footer />
-        <Modal
-        show={this.state.ModalDisplaying}
-        onhide={this.handleCloseModal}
-        >
-          testing
-        </Modal>
-      </div>
-    );
+       <Footer />
+        <SelectedBeast
+        show={this.state.isModalDisplaying}
+        onHide={this.handleCloseModal}
+        clickedBeast={this.state.clickedBeast}
+        />
+      </>
+    )
   }
-}
+};
 
 export default App;
 

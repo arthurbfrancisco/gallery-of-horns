@@ -1,30 +1,38 @@
 import React from 'react';
 import HornedBeast from './Hornedbeast';
 // import Col from 'react-bootstrap/Col';
+// import HornedOneData from './data.json';
+import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
 
 
 class Main extends React.Component {
   render() {
 
     let myData = this.props.data.map((beast, idx) => {
-return(
+      return (<Col key={idx} className="mt-4">
+        
       <HornedBeast
-        key={idx}
+        imageURL={beast.image_url}
         title={beast.title}
-        imageUrl={beast.image_url}
+        alt={beast.alt}
         description={beast.description}
-        keyword={beast.keyword}
-      />)
+        key={beast.keyword}
+        horns={beast.horns}
+        handleShowModal={this.props.handleShowModal}
+        beast={beast}
+        />
+        </Col>)
     });
 
-    return (
-
-      <main>
-        {myData}
-      </main >
-    );
-
-  }
+  return (
+    <main>
+      <Row xs={1} sm={2} md={3} lg={4}>
+      {myData}
+      </Row>
+    </main>
+  );
+}
 }
 
 export default Main;
