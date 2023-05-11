@@ -2,8 +2,12 @@ import React from 'react';
 
 class Footer extends React.Component {
   render() {
-    return <p>Created by Arthur B.Francisco</p>;
+    return (
+    <footer>
+    &copy; Arthur B Francisco 2023
+  </footer>
+  )
   }
-}
+};
 
 export default Footer;
