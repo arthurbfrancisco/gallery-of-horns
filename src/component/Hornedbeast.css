@@ -1,11 +1,4 @@
-.card-grid-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .card {
+.card {
     margin: 10px;
     border-radius: 25px;
     overflow: hidden;
@@ -17,9 +10,9 @@
     object-fit: cover;
   }
   
-  .card body {
+  .card {
     padding: 10px;
-    background-color: rgb(232, 16, 16);
+    background-color: rgb(73, 204, 244);
   }
    
   .btn-primary {
