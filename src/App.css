@@ -1,5 +1,7 @@
 body {
-  background-color: blanchedalmond;
+  background-color: rgb(138, 135, 135);
+  font-family: 'Times New Roman', serif;
+
 }
 
 .header {
@@ -8,6 +10,6 @@ body {
 
 h1 {
   font-size: 8vw;
-  font-family: cursive;
-  color: darkred;
+  font-family: 'Times New Roman', serif;
+  color: rgb(139, 80, 80);
 }

@@ -21,7 +21,7 @@ class SelectedBeast extends React.Component {
         />
         <Card.Body>
           <Card.Title>{this.props.selectedBeast.title}</Card.Title>
-          <Card.Text>{this.props.selectededBeast.description}</Card.Text>
+          <Card.Text>{this.props.selectedBeast.description}</Card.Text>
         </Card.Body>
         </Card>
       </Modal.Body>
