@@ -1,32 +1,32 @@
 import React from "react";
-import HornedBeast from '../component/Hornedbeast';
-import data from '../assets/data.json';
-import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
-import Form from 'react-bootstrap/Form';
+import HornedBeast from '../component/Hornedbeast'; // Importing the HornedBeast component
+import data from '../assets/data.json'; // Importing the Col component from react-bootstrap
+import Col from 'react-bootstrap/Col'; // Importing the Row component from react-bootstrap
+import Row from 'react-bootstrap/Row'; // Importing the Form component from react-bootstrap
+import Form from 'react-bootstrap/Form'; // Importing the Form component from react-bootstrap
 
 class Main extends React.Component {
   constructor (props) {
     super(props);
     this.state = {
-      allBeast: data,
-      filteredBeast: data,
+      allBeast: data,// Setting the initial state with the data from the JSON file
+      filteredBeast: data, // Setting the initial state for filtered data as all the data
     }
   }
 
   filter = (event) => {
-    let numHorns = parseInt(event.target.value);
-    let everyBeast = this.state.allBeast;
+    let numHorns = parseInt(event.target.value); // Parsing the selected value from the dropdown menu to an integer
+    let everyBeast = this.state.allBeast; // Creating a copy of the allBeast data
     if (numHorns) {
       everyBeast = this.state.allBeast.filter(beast => beast.horns === numHorns);
     }
-    this.setState({filteredBeast: everyBeast})
+    this.setState({filteredBeast: everyBeast}) // Updating the state with the filtered data
   }
 
   render() {
 
     let hornedOne = this.state.filteredBeast.map((horn, idx) => {
-
+    // Create a list of HornedBeast components based on the filtered data
       return (<Col key={idx} className="mt-4">
         
         <HornedBeast

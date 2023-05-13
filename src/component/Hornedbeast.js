@@ -3,7 +3,7 @@
 import React from "react";
 import Card from 'react-bootstrap/Card';
 // Import the CSS file for styling
-import './HornedBeast.css';
+import './Hornedbeast.css';
 
 // Define a class component named HornedBeast that extends React.Component
 class HornedBeast extends React.Component {
