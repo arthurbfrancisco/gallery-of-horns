@@ -2,7 +2,15 @@ import React from "react";
 import Card from 'react-bootstrap/Card';
 import './HornedBeast.css';
 
+import './Hornedbeast.css';
 class HornedBeast extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      favorites: 0
+    };
+  }
 
     constructor(props) {
       super(props);
@@ -20,6 +28,7 @@ class HornedBeast extends React.Component {
   render() {
     return (
       <>
+      < HEAD
       <Card className="card"
         onClick={() => {
           this.handleLikes();
@@ -42,8 +51,7 @@ class HornedBeast extends React.Component {
         </Card.Body>
         </Card>
         </>
-
-    );
+   
   }
 }
 
