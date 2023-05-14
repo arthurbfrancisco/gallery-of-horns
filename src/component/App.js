@@ -1,10 +1,10 @@
 import React from "react";
-import Header from "./component/Header";
-import Main from "./component/Main";
-import Footer from "./component/Footer";
-import SelectedBeast from "./component/SelectedBeast";
-import './App.css';
-import data from './assets/data.json';
+import Header from "./Header";
+import Main from "./Main";
+import Footer from "./Footer";
+import SelectedBeast from "./SelectedBeast";
+import '../App.css';
+import data from './data.json';
 
 
 

@@ -1,9 +1,10 @@
 import React from "react";
-import HornedBeast from '../component/Hornedbeast'; // Importing the HornedBeast component
-import data from '../assets/data.json'; // Importing the Col component from react-bootstrap
-import Col from 'react-bootstrap/Col'; // Importing the Row component from react-bootstrap
-import Row from 'react-bootstrap/Row'; // Importing the Form component from react-bootstrap
-import Form from 'react-bootstrap/Form'; // Importing the Form component from react-bootstrap
+import HornedBeast from '../component/Hornedbeast';
+import data from './data.json';
+import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
+import Form from 'react-bootstrap/Form';
+
 
 class Main extends React.Component {
   constructor (props) {
