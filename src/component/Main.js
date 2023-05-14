@@ -1,6 +1,6 @@
 import React from "react";
 import HornedBeast from '../component/Hornedbeast';
-import data from '../assets/data.json';
+import data from './data.json';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Form from 'react-bootstrap/Form';
